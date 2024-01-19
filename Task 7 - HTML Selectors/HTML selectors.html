@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML selectors</h1>
+<p id="para" class="para">
+ HTML selectors functions
+</p>
+<h2>
+Main content
+</h2>
+<input name="Phone" placeholder=2>
+<p id="para" class="para" > using selectors
+</p>
+<p id="pId">1</p>
+<p id="pTag">2
+</p>
+<p id="pClass">3</p>
+<script>
+const byId=document.getElementById("para");
+const byName=document.getElementsByName("Phone");
+const byTag=document.getElementsByTagName("p");
+const byClass=document.getElementsByClassName("para");
+document.getElementById("pId").innerText="Ids" +  byId.innerText;
+document.getElementById("pTag").innerText="Tags" + byTag[0].innerText +
+byTag[1].innerText;
+document.getElementById("pClass").innerText="Class" +
+byClass[0].innerText + byClass[1].innerText;
+</script>
+</body>
+</html>
